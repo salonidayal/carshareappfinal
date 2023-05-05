@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/">Carshare App</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <div [ngSwitch]="menuType">
+        <ul class="navbar-nav ms-auto" *ngSwitchCase="'default'">
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/cars">Cars</a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/book">Rides</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/user">Login/Signup</a>
+          </li>
+
+        </ul>
+
+        <ul class="navbar-nav ms-auto" *ngSwitchCase="'user'">
+          <li class="nav-item">
+            <a href="" class="nav-link">{{userName | nameTransform}}</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/availableCars">Cars</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/mail-list">Mailing List</a>
+          </li>
+          
+          
+          <li class="nav-item">
+            <a href="" class="nav-link" (click)="userLogout()" >Logout</a>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ms-auto" *ngSwitchCase="'driver'">
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/addvehicle">Add Vehicle</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/requests">View Requests</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" routerLink="/viewdriver">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" (click)="logout()" >Logout</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"> {{driverName | nameTransform }} </a>
+          </li>
+        </ul>
+      </div>
+      </div>
+    </div>
+</nav>

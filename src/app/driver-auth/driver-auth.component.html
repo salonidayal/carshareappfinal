@@ -1,0 +1,48 @@
+<div class="driver-auth">
+    <div *ngIf="!showLogin" class="sign-up">
+        <div class="container">
+            <h1>Driver Sign Up</h1>
+        <form #driverSignUp="ngForm" (ngSubmit)="signUp(driverSignUp.value)" >
+            <div class="mb-3">
+                <input type="text" class="tfeild form-control" name="name" placeholder="Enter Name" ngModel>
+              </div>
+            <div class="mb-3">
+                <input type="email" class="tfeild form-control" name="email" placeholder="Enter work email address" ngModel>
+              </div>
+              <div class="mb-3">
+                <input type="password" class="tfeild form-control" name="password" placeholder="Enter Password" ngModel>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="tfeild form-control" name="empid" placeholder="Employee Id" ngModel>
+              </div>
+              <div class="mb-3">
+                <input type="text" class="tfeild form-control" name="department" placeholder="Department" ngModel>
+              </div>
+              <a class="auth-toggle-link" (click)="openLogin()">Already have account? Click for Login</a>
+              <br><br>
+              <button type="submit" class="button-34 mb-3">Sign Up</button>
+              <p> {{authError}} </p>
+        </form>
+    </div>
+    </div>
+
+
+    <div *ngIf="showLogin" class="login">
+      <div class="container">
+          <h1>Driver Login</h1>
+      <form #driverLogin="ngForm" (ngSubmit)="login(driverLogin.value)" >
+          <div class="mb-3">
+              <input type="email" class="tfeild form-control" name="email" placeholder="Enter work email address" ngModel>
+            </div>
+            <div class="mb-3">
+              <input type="password" class="tfeild form-control" name="password" placeholder="Enter Password" ngModel>
+            </div>
+            <a class="auth-toggle-link" (click)="openSignUp()">Don't have account? Click for sign-up</a>
+            <br><br>
+            <button type="submit" class="button-34 mb-3">Login</button>
+            <p style="color:red"> {{authError}} </p>
+            
+      </form>
+  </div>
+  </div>
+</div>

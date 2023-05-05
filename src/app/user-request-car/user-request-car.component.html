@@ -1,0 +1,18 @@
+<div class="container">
+
+    <h4>Send A Request</h4>
+<form #sendRequest="ngForm" (ngSubmit)="submit(sendRequest.value)">
+    <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="email" placeholder="Enter Email of the person" ngModel>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="message" placeholder="Enter Message" ngModel>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="from" placeholder="Enter Your Email" ngModel>
+      </div>
+      
+      
+      <button class="btn btn-primary">Submit</button>
+</form>
+</div>

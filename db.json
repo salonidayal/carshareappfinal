@@ -1,0 +1,148 @@
+{
+  "driver": [
+    {
+      "name": "Saloni Dayal",
+      "email": "saloni.d@darwinbox.io",
+      "password": "12345",
+      "empid": "DBIN366",
+      "department": "Product",
+      "id": 1
+    },
+    {
+      "name": "Anahita Sinha",
+      "email": "anahita.s@darwinbox.io",
+      "password": "anahi",
+      "empid": "DB01277",
+      "department": "Sales",
+      "id": 2
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "empid": "",
+      "department": "",
+      "id": 3
+    },
+    {
+      "name": "Nistha Sharma",
+      "email": "nistha.s@darwinbox.io",
+      "password": "nistha",
+      "empid": "DB00124",
+      "department": "HR",
+      "id": 4
+    },
+    {
+      "name": "Supriya",
+      "email": "supriya.t@darwinbox.io",
+      "password": "sups",
+      "empid": "DBIN456",
+      "department": "Engineering",
+      "id": 5
+    },
+    {
+      "name": "Vineeta",
+      "email": "vineeta.k@darwinbox.io",
+      "password": "vkvkvk",
+      "empid": "DB002348",
+      "department": "HR",
+      "id": 6
+    },
+    {
+      "name": "Nmixx",
+      "email": "nmixx.j@darwinbox.io",
+      "password": "nmixx",
+      "empid": "DB89009",
+      "department": "Product",
+      "id": 7
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "empid": "",
+      "department": "",
+      "id": 8
+    }
+  ],
+  "cars": [
+    {
+      "carnumber": "MH-12-FB-0127",
+      "color": "Green",
+      "carmodel": "Scorpio",
+      "carimg": "https://cdni.autocarindia.com/utils/imageresizer.ashx?n=https://cms.haymarketindia.net/model/uploads/modelimages/Mahindra-Scorpio-N-300620221053.jpg&w=872&h=578&q=75&c=1",
+      "licence": "",
+      "seats": 2,
+      "area": "Koregaon Park",
+      "drivername": "Saloni",
+      "email": "saloni.d@darwinbox.io",
+      "id": 1
+    },
+    {
+      "carnumber": "AP-09-HW-8128",
+      "color": "Orange",
+      "carmodel": "Nissan",
+      "carimg": "https://global.nissannews.com/page-0a3c17000171b2fc662bfd35f7006290/attachment/289a38bc2a9a3d112a1dd8b4e275330af39d2555",
+      "licence": "",
+      "seats": 4,
+      "area": "Bhayander",
+      "drivername": "nistha",
+      "email": "nistha.s@darwinbox.io",
+      "id": 2
+    },
+    {
+      "carnumber": "TS-09-WE-2919",
+      "color": "Yellow",
+      "carmodel": "Volkswagen",
+      "carimg": "https://www.volkswagen.co.in/idhub/content/dam/onehub_pkw/importers/in/models/taigun/highlights/taigun-01.png",
+      "licence": "",
+      "seats": 2,
+      "area": "Koregaon Park",
+      "drivername": "Saloni",
+      "email": "saloni.d@darwinbox.io",
+      "id": 3
+    },
+    {
+      "carnumber": "MH-04-QN-1989",
+      "color": "Red",
+      "carmodel": "Honda City",
+      "carimg": "https://img.indianauto.com/2020/05/20/fIhQIEy5/whatsapp-image-2020-05-19-at-2-44-03-pm-da64.jpeg",
+      "licence": "",
+      "seats": 4,
+      "area": "Kalyani Nagar",
+      "drivername": "Meghana",
+      "email": "meghana.p@darwinbox.io",
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "name": "sathvika",
+      "email": "sathvika.k@darwinbox.io",
+      "password": "123456789",
+      "id": 1
+    }
+  ],
+  "requests": [
+    {
+      "email": "saloni.d@darwinbox.io",
+      "message": "please add me to your pool",
+      "from": "sathvika.k@darwinbox.io",
+      "id": 1
+    },
+    {
+      "email": "saloni.d@darwinbox.io",
+      "message": "hbdjkakjds",
+      "from": "sathvika.k@darwinbox.io",
+      "id": 2
+    }
+  ],
+  "mailinglist": [
+    {
+      "id": 1
+    },
+    {
+      "id": 2
+    }
+  ]
+}

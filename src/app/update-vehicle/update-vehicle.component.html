@@ -1,0 +1,28 @@
+<div class="container">
+
+    <h4>Update Vehicle Details</h4>
+<form #addCar="ngForm" (ngSubmit)="submit(addCar.value)">
+    <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="carnumber" placeholder="Enter Car Number" ngModel>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="color" placeholder="Enter Car Color" ngModel>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="carmodel" placeholder="Enter Car Model" ngModel>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="carimg" placeholder="Car Image Link" ngModel>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="licence" placeholder="Google Drive License Link" ngModel>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="seats" placeholder="Enter Number of Passengers You Want" ngModel>
+      </div>
+      <div class="mb-3">
+        <input type="text" class="tfeild form-control" name="area" placeholder="Enter Your Locality" ngModel>
+      </div>
+      <button class="btn btn-primary">Update</button>
+</form>
+</div>

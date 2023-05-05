@@ -1,0 +1,36 @@
+<div class="cars-list">
+    <div class="container">
+    <h3>Cars List</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Car Image</th>
+                <th>Car Number</th>
+                <th>Color</th>
+                <th>Car Model</th>
+                <th>Seats</th>
+                <th>Locality</th>
+                <th>Driver Name</th>
+                <th>Contact Email</th>
+                <th>Book</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let car of carList">
+                <td> <img [src]="car.carimg" alt="" height="150"> </td>
+                <td> {{car.carnumber | carNumber}} </td>
+                <td>{{car.color}}</td>
+                <td>{{car.carmodel}}</td>
+                <td> {{car.seats}} </td>
+                <td> {{car.area}} </td>
+                <td> {{car.drivername}} </td>
+                <td> {{car.email}} </td>
+                <td><button class="btn btn-warning" routerLink="/sendrequest"> Book </button>
+                     </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+</div>
+
